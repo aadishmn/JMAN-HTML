@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="Index.css" />
+    <!-- Include the external stylesheet -->
+    <title>SmilePay</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="./resources/blank.png" id="logo"/></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <span class="nav-link">Dashboard</span>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <form class="form-inline my-2 my-lg-0"  id="search-form">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="search1"
+               
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img
+                src="./resources/user.png"
+                alt="User"
+                class="rounded-circle"
+                style="width: 30px; height: 30px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sidebar and Main Content -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="col-lg-2 col-md-4 d-md-block bg-light sidebar">
+          <h5>Sections</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Transaction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Payment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Planning</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+          </ul>
+
+          <h5>Actions</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logout</a>
+            </li>
+          </ul>
+          <div class="sidebar-report">
+            <h5>Found a bug?</h5>
+
+            <p><justify>Report now to us if you find any bugs</justify></p>
+
+            <button>Report</button>
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main role="main" class="col-lg-9 col-md-8 ml-md-auto">
+          <div class="row" id="cards">
+            <div id="card1" class="col-md-6 col-lg-4">
+
+              <div class="card-body">
+                <img
+                  class="card-img-top"
+                  src="./Resources/wallet.png"
+                  alt="Card image cap"
+                />
+                <h5 class="card-title">Balance</h5>
+
+                <p class="card-text">
+                  $599.05
+                </p>
+
+                <a href="#" class="btn btn-primary">Check Balance</a>
+
+              </div>
+            </div>
+
+            <div id="card2" class="col-md-6 col-lg-4">
+
+              <div class="card-body">
+                <img
+                  class="card-img-top"
+                  src="./Resources/income.png"
+                  alt="Card image cap"
+                />
+                <h5 class="card-title">Income</h5>
+
+                <p class="card-text">
+                 $15000.1
+                </p>
+
+                <a href="#" class="btn btn-primary">Check Income</a>
+
+              </div>
+            </div>
+
+            <div id="card3" class="col-md-6 col-lg-4">
+
+              <div class="card-body">
+                <img
+                  class="card-img-top"
+                  src="./Resources/capital.png"
+                  alt="Card image cap"
+                />
+                <h5 class="card-title">Savings</h5>
+
+                <p class="card-text">
+                  $3500.0
+                </p>
+
+                <a href="#" class="btn btn-primary">Check Savings</a>
+
+               
+              </div>
+            </div>
+          </div>
+          <div class="row " id="graphs">
+    
+            <h5 class="card-title">Money Flow</h5>
+             
+            <div class="col-md-6 col-lg-6">
+            <canvas
+              id="myChart2"
+              style="width: 100%; max-width: 700px"
+            ></canvas>
+          </div>
+                
+          </div>
+
+          <div class="row col-md-6 col-lg-12 " id="stats">
+            <div id="stats1">
+              <div class="stats-body col-md-6 col-lg-1">
+               
+                <h5 class="stats-title">Transaction</h5>
+
+                <div class="stats-points">
+                  <div class="stats-logo">
+                    <img src="./Resources/photoshop.png"/>            
+                    <img src="./Resources/sketch.png" />
+                    <img src="./Resources/illustrator.png" />
+
+                   
+                  </div>
+                  <div class="stats-desc">
+                    <h5> Photoshop</h5>
+                    <h5>Sketch</h5>
+                    <h5> Illustrator</h5>
+
+
+                  </div>
+                  <div class="stats-price">
+                    <h5 style="color:red">$-50</h5>
+                    <h5 style="color:green">$350</h5>
+                    <h5 style="color:red">$-37</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="stats2">
+              <div class="stats-body2 col-md-6 col-lg-1">
+               
+                <h5 class="stats-title">Planning</h5> 
+                <div class="stats-body2">
+                  <!-- <h5>Buy a house</h5> -->
+                  <label for="file">Buy a house:</label>
+                  <progress id="file" max="100" value="70">70%</progress>
+
+                  <label for="file">Visit to japan:</label>
+                  <progress id="file" max="100" value="95">95%</progress>
+                  
+                </div>
+                
+
+              </div>
+            </div>
+
+            <div id="stats3" class="row col-md-6 " >
+                <div class="stats3-img ">
+                  <img src="./resources/—Pngtree—blue credit card_3424415.png"/>
+                </div>
+                <div class="stats3-content">
+                  <div class="stats3-content1">
+                    <div>
+                      <h4 style="">$1000.0</h4>
+                    </div>
+                    <div>
+                      <h4 style="margin-left:10px;color:red;">0.58%</h4>
+                    </div>
+                  </div>
+                  <div class="stats3-content2">
+                    <div>
+                      <h5 style="margin-left:10px;">USD</h5>
+                    </div>
+                    <div>
+                      <h5 style="margin-left:5px;color:green;">Active</h5>
+                    </div>
+                    <div>
+                      <h5 style="margin-left:5px;">12/15</h5>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script    src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js>
+    
+    </script>
+    
+    <script>
+      // Script to handle sidebar toggle
+      $(document).ready(function () {
+        $(".navbar-toggler").on("click", function () {
+          $("#sidebar").toggleClass("active");
+        });
+      });
+    </script>
+
+    <script>
+      const xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+
+      new Chart("myChart2", {
+        type: "line",
+
+        data: {
+          labels: xValues,
+
+          datasets: [
+            {
+              data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+
+              borderColor: "red",
+
+              fill: false,
+            },
+            {
+              data: [
+                1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000,
+              ],
+
+              borderColor: "green",
+
+              fill: false,
+            },
+            {
+              data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+
+              borderColor: "blue",
+
+              fill: false,
+            },
+          ],
+        },
+
+        options: {
+          legend: { display: false },
+        },
+      });
+    </script>
+  </body>
+</html>
+

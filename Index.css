@@ -1,0 +1,178 @@
+body {
+    display: flex;
+  
+    flex-direction: column;
+  
+    height: 100vh;
+  }
+  
+  .sidebar {
+    /* width: 300px; */
+  
+    height: 100vh;
+  
+    padding: 20px;
+  
+    background-color: #f8f9fa;
+  
+    position: relative;
+  
+    bottom: 0;
+  
+    overflow-y: auto;
+  
+    border-right: 3px solid #d6d6d6;
+  
+    display: flex;
+  
+    flex-direction: column;
+  }
+  
+  .content > .sidebar a {
+    color: rgb(158, 153, 153);
+  }
+  
+  .sidebar > .sidebar-report {
+    margin-top: 25px;
+  
+    background-color: rgb(11, 19, 19);
+  
+    color: aliceblue;
+  
+    border-radius: 10px;
+  
+    padding: 10px;
+  }
+  
+  .sidebar > .sidebar-report > p {
+    color: rgb(168, 164, 164);
+  }
+  
+  .sidebar > .sidebar-report > button {
+    background-color: rgb(29, 201, 172);
+  
+    border-radius: 10px;
+  
+    margin: auto;
+  }
+  
+  .content {
+    display: flex;
+  
+    flex-direction: row;
+  
+    background-color: rgb(186, 190, 190);
+  }
+  
+  .main_content {
+    display: flex;
+  
+    flex-direction: column;
+  
+    padding: 30px;
+  }
+  
+  .main_content_charts {
+    display: flex;
+  
+    flex-direction: row;
+  
+    gap: 30px;
+  }
+  
+  .card-body {
+    background-color: aliceblue;
+  }
+  
+  .card-body > img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  #cards {
+    padding-top: 25px;
+  }
+  
+  #graphs {
+    margin: 2px;
+    padding: 25px;
+    background-color: aliceblue;
+  }
+  #myChart2 {
+    margin-top: 100px;
+  }
+  
+  #stats {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;    
+    
+  }
+
+  label {
+    padding-right: 10px;
+    font-size: 1rem;
+  }
+
+  .stats-points{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    background-color:aliceblue ;
+
+
+    
+  }
+
+  .stats-points > .stats-logo > img {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+  }
+
+  .stats-price{
+    margin-left: 30px;
+  }
+  .stats-body2{
+    width: 200px;
+    height: 200px;
+
+  }
+
+  #stats2{
+    border-right: solid #d6d6d6 2px;
+  }
+
+
+.stats3-img > img{
+  padding: 5px;
+    height: 150px;
+    width: 200px;
+}
+
+#logo{
+  height: 30px;
+  width: 30px;
+}
+
+#stats3{
+  display: flex;
+  flex-direction: row;
+}
+.stats3-content{
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.stats3-content1{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(177, 189, 199);
+  border-radius: 10px;
+  padding: 5px;
+}
+.stats3-content2{
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+}
